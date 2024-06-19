@@ -76,12 +76,3 @@ class ContractGatewayImpl(ContractGateway):
         )
 
         await self.session.execute(q)
-
-    # async def update(self, user_id: UserIdentityId, updated_user: UserEntity) -> None:
-    #     q = (
-    #         update(UserIdentity)
-    #         .where(UserIdentity.identity_id == user_id.to_raw())
-    #         .values(is_active=updated_user.is_active)
-    #     )
-
-    #     await self.session.execute(q)
