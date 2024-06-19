@@ -1,7 +1,7 @@
 # ERC20 Detector
 
 ####  A web application designed to detect the ERC20 standard.
-It is coded following the principles of Clena Architecture and SOLID.
+It is coded following the principles of Clean Architecture and SOLID.
 
 ![List of endpoints](image.png)
 
