@@ -32,7 +32,7 @@ curl -X "POST" \
 
 #### GET /contracts/<contract_address>
 ```bash
-curl -X "GET" "http://localhost:8000/contract/0xf8C3527CC04340b208C854E985240c02F7B7793f"
+curl -X "GET" "http://localhost:8000/contracts/0xf8C3527CC04340b208C854E985240c02F7B7793f"
 ```
 ```json
 {
@@ -70,7 +70,7 @@ curl -X "GET" "http://localhost:8000/contracts?status=Waits%20processing&limit=2
 ```
 
 #### POST /contracts/<contract_address>/process
-###### Processes the source code of the contract and detects the standard/ To detect the er20 standard, I use the solidity compiler. The application installs all possible versions of it and uses the one that requires a specific source code for detection.
+###### Processes the source code of the contract and detects the standard. To detect the erc20 standard, I use the solidity compiler. The application installs all possible versions of it and uses the one that requires a specific source code for detection.
 
 ```bash
 curl -X "POST" "http://127.0.0.1:8000/contracts/0xf8C3527CC04340b208C854E985240c02F7B7793f/process"
